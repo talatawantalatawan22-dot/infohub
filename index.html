@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InfoHub</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+header{
+background:#0d6efd;
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.search-box{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.search-box input{
+padding:12px;
+width:300px;
+border:none;
+border-radius:8px;
+}
+
+.search-box button{
+padding:12px 20px;
+border:none;
+border-radius:8px;
+background:#ff9800;
+color:white;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
+transition:.3s;
+display:block;
+text-decoration:none;
+color:#333;
+}
+background:white;
+padding:20px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.icon{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.section-title{
+text-align:center;
+font-size:30px;
+margin:30px 0 20px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>InfoHub</h1>
+<p>Everything You Need in One Place</p>
+
+<div class="search-box">
+<input type="text" placeholder="Search mobiles, cars, blogs...">
+<button>Search</button>
+</div>
+</header>
+
+<h2 class="section-title">Categories</h2>
+
+<section class="categories">
+  <a href="#mobiles" class="card">
+<div class="icon">📱</div>
+<h3>Mobile Prices</h3>
+</a>
+
+<a href="#cars" class="card">
+<div class="icon">🚗</div>
+<h3>Cars</h3>
+</a>
+
+<a href="#blogs" class="card">
+<div class="icon">📰</div>
+<h3>Blogs</h3>
+</a>
+
+<a href="#technology" class="card">
+<div class="icon">💻</div>
+<h3>Technology</h3>
+</a>
+
+</section>
+
+<h2 class="section-title" id="mobiles">Latest Mobile Prices</h2>
+
+<section class="categories">
+  <div class="card">
+<div class="icon">📱</div>
+<h3>Samsung Galaxy S25</h3>
+<p>PKR 314,999</p>
+</div>
+
+<div class="card">
+<div class="icon">📱</div>
+<h3>iPhone 16</h3>
+<p>PKR 369,999</p>
+</div>
+
+<div class="card">
+<div class="icon">📱</div>
+<h3>Infinix Note 50</h3>
+<p>PKR 64,999</p>
+</div>
+
+<div class="card">
+<div class="icon">📱</div>
+<h3>Redmi Note 14</h3>
+<p>PKR 54,999</p>
+</div>
+<div class="card">
+    <div class="icon">📱</div>
+    <h3>Samsung Galaxy A56</h3>
+    <p>PKR 124,999</p>
+</div>
+
+<div class="card">
+    <div class="icon">📱</div>
+    <h3>Realme 14 Pro</h3>
+    <p>PKR 89,999</p>
+</div>
+
+<div class="card">
+    <div class="icon">📱</div>
+    <h3>Vivo V50</h3>
+    <p>PKR 139,999</p>
+</div>
+<h2 class="section-title" id="cars">Latest Cars</h2>
+</section>
+<section class="categories">
+
+<div class="card">
+    <div class="icon">🚗</div>
+    <h3>Honda Civic 2026</h3>
+    <p>PKR 9,899,000</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚙</div>
+    <h3>Toyota Corolla Altis</h3>
+    <p>PKR 7,549,000</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚘</div>
+    <h3>Suzuki Alto VXL</h3>
+    <p>PKR 3,140,000</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚙</div>
+    <h3>Kia Sportage</h3>
+    <p>PKR 11,825,000</p>
+</div>
+<div class="card">
+    <div class="icon">🚗</div>
+    <h3>Hyundai Tucson</h3>
+    <p>PKR 10,999,000</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚙</div>
+    <h3>Toyota Fortuner</h3>
+    <p>PKR 19,899,000</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚘</div>
+    <h3>Honda City 1.5 Aspire</h3>
+    <p>PKR 5,849,000</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚙</div>
+    <h3>Suzuki Swift GLX</h3>
+    <p>PKR 4,719,000</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚗</div>
+    <h3>Changan Alsvin Lumiere</h3>
+    <p>PKR 4,799,000</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚙</div>
+    <h3>MG HS Essence</h3>
+    <p>PKR 8,399,000</p>
+</div>
+</section>
+<h2 class="section-title" id="blogs">Latest Blogs</h2>
+<section class="categories">
+
+<div class="card">
+    <div class="icon">📰</div>
+    <h3>Top 10 Best Smartphones of 2026</h3>
+    <p>Read the latest smartphone buying guide.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚗</div>
+    <h3>Best Family Cars in Pakistan</h3>
+    <p>Compare price, mileage and features.</p>
+</div>
+
+<div class="card">
+    <div class="icon">💻</div>
+    <h3>Top Technology Trends 2026</h3>
+    <p>Discover the newest tech innovations.</p>
+</div>
+
+<div class="card">
+    <div class="icon">📱</div>
+    <h3>Android vs iPhone</h3>
+    <p>Which one is best for you?</p>
+</div>
+
+<div class="card">
+    <div class="icon">🌐</div>
+    <h3>How to Earn Money Online</h3>
+    <p>Simple ways to earn from the internet.</p>
+</div>
+<div class="card">
+    <div class="icon">🤖</div>
+    <h3>Artificial Intelligence Explained</h3>
+    <p>Learn how AI is changing the world.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🔒</div>
+    <h3>How to Stay Safe Online</h3>
+    <p>Best cybersecurity tips for everyone.</p>
+</div>
+
+<div class="card">
+    <div class="icon">📷</div>
+    <h3>Best Camera Phones in 2026</h3>
+    <p>Compare top camera smartphones.</p>
+</div>
+
+<div class="card">
+    <div class="icon">💰</div>
+    <h3>Best Budget Smartphones</h3>
+    <p>Top phones under your budget.</p>
+</div>
+
+<div class="card">
+    <div class="icon">⚡</div>
+    <h3>Fast Charging Guide</h3>
+    <p>Everything about modern fast charging.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🌍</div>
+    <h3>Top Websites to Learn Skills</h3>
+    <p>Improve your skills with free resources.</p>
+</div>
+
+<div class="card">
+    <div class="icon">📱</div>
+    <h3>Upcoming Smartphones 2026</h3>
+    <p>See the most awaited mobile launches.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚘</div>
+    <h3>Electric Cars in Pakistan</h3>
+    <p>Explore the future of electric vehicles.</p>
+</div>
+<section class="categories">
+
+<div class="card">
+    <div class="icon">💻</div>
+    <h3>Windows 12 Updates</h3>
+    <p>Latest features and improvements.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🤖</div>
+    <h3>AI Tools for Students</h3>
+    <p>Best AI tools to improve learning.</p>
+</div>
+
+<div class="card">
+    <div class="icon">📱</div>
+    <h3>Android 17 Features</h3>
+    <p>New features and performance upgrades.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🍎</div>
+    <h3>Latest iPhone Updates</h3>
+    <p>What's new in Apple's ecosystem.</p>
+</div>
+
+<div class="card">
+    <div class="icon">☁️</div>
+    <h3>Cloud Computing</h3>
+    <p>Learn about cloud technology.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🔐</div>
+    <h3>Cyber Security Tips</h3>
+    <p>Protect your devices from hackers.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🌐</div>
+    <h3>5G Technology</h3>
+    <p>How 5G is changing communication.</p>
+</div>
+
+<div class="card">
+    <div class="icon">⌚</div>
+    <h3>Best Smartwatches 2026</h3>
+    <p>Top smartwatch recommendations.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🎮</div>
+    <h3>Gaming Laptops</h3>
+    <p>Best laptops for gamers.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚀</div>
+    <h3>Future Technology</h3>
+    <p>Discover upcoming innovations.</p>
+</div>
+
+</section>
+</section>
+
+<h2 class="section-title" id="technology">Latest Technology</h2>
+<section class="categories">
+
+<div class="card">
+    <div class="icon">💻</div>
+    <h3>Windows 12 Updates</h3>
+    <p>Latest features and improvements.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🤖</div>
+    <h3>AI Tools for Students</h3>
+    <p>Best AI tools to improve learning.</p>
+</div>
+
+<div class="card">
+    <div class="icon">📱</div>
+    <h3>Android 17 Features</h3>
+    <p>New features and performance upgrades.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🍎</div>
+    <h3>Latest iPhone Updates</h3>
+    <p>What's new in Apple's ecosystem.</p>
+</div>
+
+<div class="card">
+    <div class="icon">☁️</div>
+    <h3>Cloud Computing</h3>
+    <p>Learn about cloud technology.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🔐</div>
+    <h3>Cyber Security Tips</h3>
+    <p>Protect your devices from hackers.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🌐</div>
+    <h3>5G Technology</h3>
+    <p>How 5G is changing communication.</p>
+</div>
+
+<div class="card">
+    <div class="icon">⌚</div>
+    <h3>Best Smartwatches 2026</h3>
+    <p>Top smartwatch recommendations.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🎮</div>
+    <h3>Gaming Laptops</h3>
+    <p>Best laptops for gamers.</p>
+</div>
+
+<div class="card">
+    <div class="icon">🚀</div>
+    <h3>Future Technology</h3>
+    <p>Discover upcoming innovations.</p>
+</div>
+
+</section>
+<section style="background:white;padding:40px 20px;text-align:center;">
+<h2>About InfoHub</h2>
+<p>
+📧 Email: talatawantalatawan22@gmail.com
+</p>
+
+<p>
+🌐 Website: www.infohub.com
+</p>
+📞 Phone: +92 331 4337217
+</p>
+
+<p style="max-width:700px;margin:20px auto;line-height:1.8;">
+InfoHub is your one-stop website for Mobile Prices, Cars, Technology News and Helpful Blogs. Our goal is to provide simple, fast and useful information for everyone.
+</p>
+</section>
+<section style="background:#f8f9fa;padding:40px 20px;text-align:center;">
+<h2>Contact Us</h2>
+
+<input type="text" placeholder="Your Name"
+style="width:90%;max-width:400px;padding:12px;margin:10px;border:1px solid #ccc;border-radius:8px;"><br>
+
+<input type="email" placeholder="Your Email"
+style="width:90%;max-width:400px;padding:12px;margin:10px;border:1px solid #ccc;border-radius:8px;"><br>
+
+<textarea placeholder="Your Message"
+style="width:90%;max-width:400px;height:120px;padding:12px;margin:10px;border:1px solid #ccc;border-radius:8px;"></textarea><br>
+
+<button style="background:#0d6efd;color:white;padding:12px 25px;border:none;border-radius:8px;font-size:16px;cursor:pointer;">
+Send Message
+</button>
+</section>
+<footer style="background:#222;color:white;text-align:center;padding:20px;">
+<p>© 2026 InfoHub. All Rights Reserved.</p>
+</footer>
+<script>
+const input = document.querySelector(".search-box input");
+const button = document.querySelector(".search-box button");
+
+button.addEventListener("click", function () {
+    const text = input.value.toLowerCase();
+
+  if (text.includes("mobile")) {
+    location.href = "#mobiles";
+}
+else if (text.includes("car")) {
+    location.href = "#cars";
+}
+else if (text.includes("blog")) {
+    location.href = "#blogs";
+}
+else if (text.includes("technology")) {
+    location.href = "#technology";
+}
+else {
+    alert("No Result Found");
+}
+});
+
+input.addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        button.click();
+    }
+});
+</script>
+</body>
+</html>
