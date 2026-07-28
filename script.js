@@ -1,29 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
+function searchSite() {
+    let input = document.querySelector("input").value.toLowerCase();
 
-  const button = document.querySelector(".hero button");
-  const input = document.querySelector(".hero input");
-
-  button.addEventListener("click", function () {
-    if (input.value.trim() === "") {
-      alert("Please enter something to search.");
+    if (input.includes("mobile")) {
+        window.location.href = "mobiles.html";
+    } else if (input.includes("car")) {
+        window.location.href = "cars.html";
+    } else if (input.includes("technology") || input.includes("tech")) {
+        window.location.href = "technology.html";
+    } else if (input.includes("news")) {
+        window.location.href = "news.html";
+    } else if (input.includes("ai")) {
+        window.location.href = "ai.html";
+    } else if (input.includes("health")) {
+        window.location.href = "health.html";
+    } else if (input.includes("education")) {
+        window.location.href = "education.html";
     } else {
-      alert("You searched for: " + input.value);
+        alert("No matching page found.");
     }
-  });
+}
 
-});
-const images = [
-"https://picsum.photos/900/350?random=1",
-"https://picsum.photos/900/350?random=2",
-"https://picsum.photos/900/350?random=3",
-"https://picsum.photos/900/350?random=4",
-"https://picsum.photos/900/350?random=5"
-];
-
-let index = 0;
-const slider = document.getElementById("sliderImage");
-
-setInterval(() => {
-  index = (index + 1) % images.length;
-  slider.src = images[index];
-}, 3000);
+document.querySelector("button").onclick = searchSite;
