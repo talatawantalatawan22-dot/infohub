@@ -220,3 +220,30 @@ font-size:17px;
   background:#0d6efd !important;
   color:#ffffff !important;
 }
+/* CATEGORIES HAMESHA VISIBLE */
+.categories,
+.categories[style] {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+.hero-buttons {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.hero-buttons a {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
