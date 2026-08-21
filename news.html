@@ -4,46 +4,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Latest News 2026 | InfoHub</title>
+<title>News & Updates 2026 | InfoHub</title>
 
-<meta name="description" content="Latest Pakistan and world news covering government, smartphones, technology, AI, education, business, sports, automobiles, health and more.">
-<meta name="keywords" content="Pakistan news 2026, latest news, government news, smartphone news, technology news, education news, sports news, business news">
+<meta name="description" content="InfoHub News & Updates covers Pakistan, technology, smartphones, AI, education, business, cars, sports, health, science, weather and international developments.">
+<meta name="keywords" content="Pakistan news 2026, technology news, smartphone updates, AI news, education news, business news, sports news, car news, health updates, world news">
 <meta name="robots" content="index, follow">
+<meta name="author" content="InfoHub">
+
+<link rel="canonical" href="https://infohubpk.online/news.html">
+
+<meta property="og:title" content="News & Updates 2026 | InfoHub">
+<meta property="og:description" content="Pakistan, technology, smartphones, AI, education, business, sports, health and world updates.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://infohubpk.online/news.html">
 
 <style>
 *{
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     margin:0;
-    font-family:Arial,sans-serif;
+    padding:0;
+    font-family:Arial,Helvetica,sans-serif;
     background:#f4f7fb;
     color:#222;
-    line-height:1.7;
+    line-height:1.75;
 }
 
 header{
     background:#0d6efd;
-    color:white;
+    color:#fff;
     text-align:center;
-    padding:28px 15px;
+    padding:32px 15px;
 }
 
 header h1{
     margin:0;
-    font-size:32px;
+    font-size:34px;
+    font-weight:700;
 }
 
 header p{
-    margin:6px 0 0;
+    margin:7px 0 0;
+    font-size:16px;
 }
 
 nav{
-    background:white;
+    background:#fff;
     text-align:center;
-    padding:12px 8px;
+    padding:13px 8px;
     box-shadow:0 2px 8px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:10;
 }
 
 nav a{
@@ -52,12 +70,36 @@ nav a{
     color:#0d6efd;
     font-weight:bold;
     margin:4px 8px;
+    padding:4px 2px;
+}
+
+nav a:hover{
+    color:#084298;
 }
 
 .container{
     width:94%;
     max-width:1150px;
-    margin:30px auto;
+    margin:32px auto;
+}
+
+.intro{
+    background:#fff;
+    padding:25px;
+    border-radius:14px;
+    border:1px solid #e1e6ed;
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
+    margin-bottom:28px;
+}
+
+.intro h2{
+    margin-top:0;
+    color:#17233c;
+}
+
+.intro p{
+    margin:10px 0;
+    color:#444;
 }
 
 .page-title{
@@ -67,7 +109,8 @@ nav a{
 
 .page-title h2{
     margin:0;
-    font-size:29px;
+    font-size:30px;
+    color:#17233c;
 }
 
 .page-title p{
@@ -81,21 +124,28 @@ nav a{
 }
 
 .news-card{
-    background:white;
-    border:1px solid #e3e7ed;
+    background:#fff;
+    border:1px solid #e1e6ed;
     border-radius:14px;
-    padding:22px;
-    box-shadow:0 4px 15px rgba(0,0,0,.07);
+    padding:23px;
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
+    transition:transform .2s ease,box-shadow .2s ease;
+}
+
+.news-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 7px 20px rgba(0,0,0,.09);
 }
 
 .news-card h3{
-    margin:5px 0 10px;
+    margin:8px 0 12px;
     font-size:21px;
+    line-height:1.4;
     color:#17233c;
 }
 
 .news-card p{
-    margin:9px 0;
+    margin:10px 0;
     color:#444;
     font-size:15px;
 }
@@ -104,7 +154,7 @@ nav a{
     display:inline-block;
     background:#eaf2ff;
     color:#0d6efd;
-    padding:4px 10px;
+    padding:4px 11px;
     border-radius:20px;
     font-size:12px;
     font-weight:bold;
@@ -116,22 +166,45 @@ nav a{
     margin-left:7px;
 }
 
+.source-note{
+    background:#f8f9fa;
+    border-left:4px solid #0d6efd;
+    padding:10px 13px;
+    margin-top:14px;
+    color:#555;
+    font-size:13px;
+}
+
 footer{
     background:#222;
-    color:white;
+    color:#fff;
     text-align:center;
-    padding:22px 15px;
-    margin-top:40px;
+    padding:25px 15px;
+    margin-top:45px;
 }
 
 footer p{
-    margin:4px 0;
+    margin:5px 0;
+    font-size:14px;
 }
 
 @media(max-width:700px){
 
     header h1{
-        font-size:27px;
+        font-size:28px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+
+    nav{
+        position:static;
+    }
+
+    nav a{
+        font-size:14px;
+        margin:3px 5px;
     }
 
     .news-grid{
@@ -150,9 +223,12 @@ footer p{
         font-size:19px;
     }
 
-    nav a{
-        font-size:14px;
-        margin:4px 5px;
+    .intro{
+        padding:19px;
+    }
+
+    .page-title h2{
+        font-size:26px;
     }
 }
 </style>
@@ -162,7 +238,7 @@ footer p{
 
 <header>
     <h1>InfoHub</h1>
-    <p>Latest News & Updates</p>
+    <p>News, Information & Useful Updates</p>
 </header>
 
 <nav>
@@ -172,404 +248,1873 @@ footer p{
     <a href="technology.html">Technology</a>
     <a href="news.html">News</a>
     <a href="blogs.html">Blogs</a>
+    <a href="education.html">Education</a>
 </nav>
 
 <div class="container">
 
+<section class="intro">
+
+<h2>News & Updates</h2>
+
+<p>
+Welcome to the InfoHub News & Updates section. This page provides
+informational coverage of topics that are important to readers in Pakistan
+and around the world.
+</p>
+
+<p>
+Our coverage includes technology, smartphones, artificial intelligence,
+education, business, automobiles, sports, health, science, weather and
+digital life.
+</p>
+
+<p>
+Readers should always verify important information through official
+government departments, organisations and other reliable primary sources
+before making important decisions.
+</p>
+
+</section>
+
 <div class="page-title">
-    <h2>Latest News</h2>
-    <p>Pakistan, Technology, Smartphones, Education, Business, Sports and World News</p>
+
+<h2>Latest News & Informational Updates</h2>
+
+<p>
+Pakistan, Technology, Smartphones, AI, Education, Business, Cars, Sports,
+Health, Science and International Topics
+</p>
+
 </div>
 
 <div class="news-grid">
 
 <!-- 1 -->
 <article class="news-card">
-<span class="category">Pakistan / Government</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Pakistan Government and National Developments</h3>
+<span class="category">Pakistan</span>
+<span class="date">August 2026</span>
+
+<h3>Digital Services Continue to Become More Important in Pakistan</h3>
 
 <p>
-Important government and national developments continue to receive attention
-across Pakistan. Decisions by federal and provincial authorities can affect
-education, employment, business, technology and everyday life.
+Digital services are playing a growing role in everyday activities across
+Pakistan. People increasingly use websites and mobile applications for
+communication, shopping, education, banking and information.
 </p>
 
 <p>
-Citizens are advised to follow official announcements and reliable news
-sources for confirmed information about major government decisions.
+The expansion of digital services can make routine tasks more convenient,
+particularly for people who have reliable internet access and suitable
+devices.
 </p>
+
+<p>
+Businesses are also using online platforms to communicate with customers,
+advertise products and provide support.
+</p>
+
+<div class="source-note">
+Informational update. Readers should confirm official announcements from
+the relevant authorities when required.
+</div>
+
 </article>
 
 
 <!-- 2 -->
 <article class="news-card">
-<span class="category">Politics</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Latest Political Developments in Pakistan</h3>
+<span class="category">Pakistan</span>
+<span class="date">August 2026</span>
+
+<h3>Small Businesses Explore More Online Opportunities</h3>
 
 <p>
-Pakistan's political situation remains an important part of national news,
-with government institutions, political parties and courts continuing to make
-important announcements.
+Small businesses in Pakistan can use websites, social media and online
+marketplaces to reach customers beyond their local areas.
 </p>
 
 <p>
-Political developments can also influence the economy, business confidence and
-public policy across the country.
+Digital payments, online customer support and simple business websites can
+also help small businesses organise their operations.
 </p>
+
+<p>
+However, businesses should carefully compare service fees, security
+requirements and customer demand before selecting an online platform.
+</p>
+
+<div class="source-note">
+General business information for readers and small business owners.
+</div>
+
 </article>
 
 
 <!-- 3 -->
 <article class="news-card">
-<span class="category">Sports / Cricket</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Babar Azam to Miss First Test Against England</h3>
+<span class="category">Technology</span>
+<span class="date">August 2026</span>
+
+<h3>Artificial Intelligence Remains a Major Technology Trend</h3>
 
 <p>
-Pakistan batter Babar Azam is set to miss the first Test against England after
-suffering a hand injury during the warm-up match.
+Artificial intelligence continues to influence many areas of the technology
+industry. AI features are now appearing in software, search tools, mobile
+applications and productivity services.
 </p>
 
 <p>
-Salman Ali Agha has been named stand-in captain for Pakistan for the opening
-Test. The team management will continue to monitor Babar's condition.
+For ordinary users, AI can assist with research, writing, summarisation,
+planning and learning.
 </p>
+
+<p>
+AI-generated information can still contain errors, so users should check
+important facts before relying on them.
+</p>
+
+<div class="source-note">
+General technology information. AI output should be independently verified.
+</div>
+
 </article>
 
 
 <!-- 4 -->
 <article class="news-card">
-<span class="category">Smartphones</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Smartphone Market Continues to Grow With New Devices</h3>
+<span class="category">AI</span>
+<span class="date">August 2026</span>
+
+<h3>AI Tools Are Being Used for Everyday Productivity</h3>
 
 <p>
-The smartphone market continues to develop as manufacturers compete with new
-processors, better cameras, brighter displays and longer software support.
+Students, writers, developers and business users are experimenting with
+artificial intelligence tools to complete routine digital tasks.
 </p>
 
 <p>
-Consumers in Pakistan are increasingly comparing specifications, prices,
-warranty and official availability before purchasing new phones.
+Common uses include generating ideas, organising information, improving
+drafts and assisting with programming.
 </p>
+
+<p>
+The most useful approach is often to treat AI as an assistant rather than
+as a replacement for human review and decision-making.
+</p>
+
+<div class="source-note">
+Informational technology update.
+</div>
+
 </article>
 
 
 <!-- 5 -->
 <article class="news-card">
-<span class="category">Technology</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Technology Companies Increase Focus on Artificial Intelligence</h3>
+<span class="category">Smartphones</span>
+<span class="date">August 2026</span>
+
+<h3>Smartphone Buyers Compare More Than Camera Specifications</h3>
 
 <p>
-Artificial intelligence remains one of the biggest areas of development in the
-global technology industry.
+Modern smartphone buyers often consider several factors before purchasing a
+new device. Price, battery capacity, display quality, software support and
+after-sales service can all influence a buying decision.
 </p>
 
 <p>
-AI is being integrated into smartphones, computers, search services, business
-software and many other digital products.
+Camera performance remains important, but it is only one part of the overall
+smartphone experience.
 </p>
+
+<p>
+Consumers should also check official warranty information and local
+availability before purchasing a device.
+</p>
+
+<div class="source-note">
+For current prices and availability, check official sellers and authorised
+retailers.
+</div>
+
 </article>
 
 
 <!-- 6 -->
 <article class="news-card">
-<span class="category">AI</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>AI Tools Continue to Change Digital Work</h3>
+<span class="category">Mobile Technology</span>
+<span class="date">August 2026</span>
+
+<h3>Longer Software Support Is Becoming More Valuable</h3>
 
 <p>
-AI tools are increasingly being used for writing, research, programming,
-education, image creation and business tasks.
+Software updates can improve security, fix bugs and introduce new features.
+Because smartphones are increasingly used for financial and personal tasks,
+continued software support is an important consideration.
 </p>
 
 <p>
-Experts continue to recommend checking AI-generated information before using
-it for important decisions or publishing it as factual information.
+Buyers comparing phones should look at the manufacturer's update policy
+rather than considering hardware specifications alone.
 </p>
+
+<p>
+A device with suitable long-term support can provide better value for users
+who keep their phones for several years.
+</p>
+
+<div class="source-note">
+General smartphone buying information.
+</div>
+
 </article>
 
 
 <!-- 7 -->
 <article class="news-card">
+
 <span class="category">Education</span>
-<span class="date">18 Aug 2026</span>
+<span class="date">August 2026</span>
 
-<h3>Education and Digital Learning Remain a Major Focus</h3>
+<h3>Online Learning Gives Students More Flexible Study Options</h3>
 
 <p>
-Digital education is becoming increasingly important for students as schools,
-colleges and training organisations adopt online learning resources.
+Online educational resources allow students to study subjects outside the
+traditional classroom environment.
 </p>
 
 <p>
-Technology can help students access educational material, online courses and
-new learning opportunities from different locations.
+Video lessons, digital books, practice exercises and educational websites
+can supplement school and college learning.
 </p>
+
+<p>
+Students should compare the quality of different learning resources and
+prefer reliable educational material.
+</p>
+
+<div class="source-note">
+General education information for students and families.
+</div>
+
 </article>
 
 
 <!-- 8 -->
 <article class="news-card">
-<span class="category">Jobs</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Youth Employment and Skills Development Gain Attention</h3>
+<span class="category">Education</span>
+<span class="date">August 2026</span>
+
+<h3>Digital Skills Can Help Students Prepare for Future Work</h3>
 
 <p>
-Employment opportunities and professional skills remain important issues for
-young people in Pakistan.
+Basic digital skills are useful in many modern careers. Students can benefit
+from learning computer fundamentals, communication, research and responsible
+internet use.
 </p>
 
 <p>
-Digital skills, freelancing, technical education and vocational training can
-help students prepare for changing job requirements.
+More specialised skills such as programming, graphic design, digital
+marketing and data analysis may provide additional career options.
 </p>
+
+<p>
+Learning should be consistent and practical rather than based only on
+collecting certificates.
+</p>
+
+<div class="source-note">
+Educational guidance for general informational purposes.
+</div>
+
 </article>
 
 
 <!-- 9 -->
 <article class="news-card">
+
 <span class="category">Business</span>
-<span class="date">18 Aug 2026</span>
+<span class="date">August 2026</span>
 
-<h3>Businesses Watch Consumer Demand and Technology Costs</h3>
+<h3>Online Shopping Continues to Change Consumer Behaviour</h3>
 
 <p>
-Businesses continue to monitor consumer demand, import costs and technology
-prices as market conditions change.
+Online shopping gives consumers the ability to compare products from
+different sellers without visiting multiple physical stores.
 </p>
 
 <p>
-Companies are increasingly using digital services and online platforms to
-reach customers and improve their business operations.
+Price comparison can be useful, but buyers should also examine seller
+reputation, return policies, delivery conditions and warranty information.
 </p>
+
+<p>
+Businesses can benefit from clear product descriptions and transparent
+customer service.
+</p>
+
+<div class="source-note">
+General consumer and e-commerce information.
+</div>
+
 </article>
 
 
 <!-- 10 -->
 <article class="news-card">
+
 <span class="category">Economy</span>
-<span class="date">18 Aug 2026</span>
+<span class="date">August 2026</span>
 
-<h3>Pakistan Economy Remains in Focus</h3>
+<h3>Currency Movements Can Affect Imported Technology Prices</h3>
 
 <p>
-Inflation, exchange rates, exports, imports and government economic policies
-remain important topics for businesses and consumers in Pakistan.
+Many electronic products sold in Pakistan are connected to international
+supply chains. Currency movements can therefore influence the local cost of
+imported products.
 </p>
 
 <p>
-Economic changes can directly affect the prices of imported smartphones,
-vehicles, electronics and other products.
+Smartphones, computers, components and other technology products may be
+affected by changes in import costs.
 </p>
+
+<p>
+Consumers should check current market prices instead of relying on old
+price information.
+</p>
+
+<div class="source-note">
+Prices can change. Always verify the latest local market price.
+</div>
+
 </article>
 
 
 <!-- 11 -->
 <article class="news-card">
-<span class="category">Automobiles</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Electric Vehicles Continue to Attract Global Attention</h3>
+<span class="category">Cars</span>
+<span class="date">August 2026</span>
+
+<h3>Vehicle Buyers Increasingly Consider Safety Features</h3>
 
 <p>
-Electric vehicles are becoming an increasingly important part of the global
-automotive industry.
+Modern vehicle buyers often look beyond engine size and appearance when
+comparing cars.
 </p>
 
 <p>
-Battery technology, charging stations, vehicle prices and government policies
-are important factors in the growth of electric vehicles.
+Safety equipment, braking systems, airbags, driver assistance features and
+vehicle structure can all be important factors.
 </p>
+
+<p>
+Buyers should compare the specifications of the exact variant they intend
+to purchase because equipment can differ between versions.
+</p>
+
+<div class="source-note">
+General automobile information.
+</div>
+
 </article>
 
 
 <!-- 12 -->
 <article class="news-card">
-<span class="category">Cars</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>New Car Technology Focuses on Safety and Connectivity</h3>
+<span class="category">Automobiles</span>
+<span class="date">August 2026</span>
+
+<h3>Electric Vehicles Continue to Develop Around the World</h3>
 
 <p>
-Modern vehicles are increasingly equipped with advanced safety systems,
-connected features, digital displays and driver-assistance technology.
+Electric vehicles are receiving continued attention from manufacturers,
+technology companies and consumers.
 </p>
 
 <p>
-Car buyers are now comparing not only engine performance but also safety,
-technology, fuel economy and after-sales support.
+Battery range, charging infrastructure, vehicle price and maintenance are
+important factors when evaluating an electric vehicle.
 </p>
+
+<p>
+The availability of charging facilities can be particularly important for
+people considering an electric vehicle for daily travel.
+</p>
+
+<div class="source-note">
+General automotive technology information.
+</div>
+
 </article>
 
 
 <!-- 13 -->
 <article class="news-card">
-<span class="category">Apps / Social Media</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Social Media Platforms Continue Adding New Features</h3>
+<span class="category">Cyber Security</span>
+<span class="date">August 2026</span>
+
+<h3>Strong Account Security Is Important for Internet Users</h3>
 
 <p>
-Popular social media and messaging platforms continue to introduce new
-features for communication, video, search and content creation.
+Online accounts may contain personal information, photographs, documents
+and financial details. Protecting these accounts is therefore an important
+part of digital life.
 </p>
 
 <p>
-Users should regularly review privacy settings and app permissions when
-installing updates or using new features.
+Using unique passwords and enabling two-factor authentication can provide
+additional protection.
 </p>
+
+<p>
+Users should also avoid entering passwords on unfamiliar websites or
+following suspicious messages.
+</p>
+
+<div class="source-note">
+General cybersecurity awareness information.
+</div>
+
 </article>
 
 
 <!-- 14 -->
 <article class="news-card">
-<span class="category">Cyber Security</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Cyber Security Becomes More Important for Internet Users</h3>
+<span class="category">Internet Safety</span>
+<span class="date">August 2026</span>
+
+<h3>Users Should Be Careful With Suspicious Links and Messages</h3>
 
 <p>
-Online scams, phishing attempts and account attacks remain common risks for
-internet users.
+Fraudulent messages can sometimes imitate banks, delivery companies,
+social networks or other familiar services.
 </p>
 
 <p>
-Strong passwords, two-factor authentication, updated software and careful
-handling of unknown links can help improve online security.
+A message requesting an urgent password, payment or verification should be
+checked carefully before any action is taken.
 </p>
+
+<p>
+Users should access important services through their official applications
+or websites instead of unknown links.
+</p>
+
+<div class="source-note">
+General online safety guidance.
+</div>
+
 </article>
 
 
 <!-- 15 -->
 <article class="news-card">
-<span class="category">Health</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Digital Health Technology Continues to Develop</h3>
+<span class="category">Social Media</span>
+<span class="date">August 2026</span>
+
+<h3>Social Platforms Continue to Influence Digital Communication</h3>
 
 <p>
-Wearable devices and health applications are becoming more popular for
-tracking everyday activity, exercise and other personal measurements.
+Social media platforms have become important channels for communication,
+entertainment and information sharing.
 </p>
 
 <p>
-These technologies can support personal monitoring, but important medical
-decisions should always be discussed with qualified health professionals.
+Users can benefit from reviewing privacy controls and limiting the amount of
+personal information they publicly share.
 </p>
+
+<p>
+Information found on social media should not automatically be considered
+verified simply because it has received many views or shares.
+</p>
+
+<div class="source-note">
+General digital literacy information.
+</div>
+
 </article>
 
 
 <!-- 16 -->
 <article class="news-card">
-<span class="category">International</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Global News Remains Focused on Technology and Economy</h3>
+<span class="category">Science</span>
+<span class="date">August 2026</span>
+
+<h3>Computing Research Continues to Support New Technologies</h3>
 
 <p>
-International markets continue to follow developments in technology,
-artificial intelligence, trade and the global economy.
+Advances in computing can influence artificial intelligence, robotics,
+software development, scientific research and industrial systems.
 </p>
 
 <p>
-Changes in major international markets can also influence businesses and
-technology prices in countries such as Pakistan.
+Improved processors and specialised computing systems can make it possible
+to process larger amounts of information more efficiently.
 </p>
+
+<p>
+Research in computing often takes years before experimental ideas become
+widely available consumer products.
+</p>
+
+<div class="source-note">
+General science and computing information.
+</div>
+
 </article>
 
 
 <!-- 17 -->
 <article class="news-card">
-<span class="category">Science</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>New Developments in Science and Computing</h3>
+<span class="category">Health</span>
+<span class="date">August 2026</span>
+
+<h3>Health Apps Can Help Users Track Everyday Activity</h3>
 
 <p>
-Scientists and technology companies continue to work on advanced computing,
-robotics, artificial intelligence and new digital technologies.
+Smartphones and wearable devices can record information such as steps,
+exercise sessions and other everyday activity measurements.
 </p>
 
 <p>
-Research in these areas could influence future computers, smartphones,
-healthcare and industrial technologies.
+Such tools may encourage people to pay more attention to their daily habits
+and activity levels.
 </p>
+
+<p>
+Health applications are not a substitute for professional medical
+assessment when a person has a health concern.
+</p>
+
+<div class="source-note">
+General health technology information, not medical advice.
+</div>
+
 </article>
 
 
 <!-- 18 -->
 <article class="news-card">
-<span class="category">Weather</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Weather Updates Remain Important During Monsoon Season</h3>
+<span class="category">Health</span>
+<span class="date">August 2026</span>
+
+<h3>Digital Health Information Should Come From Reliable Sources</h3>
 
 <p>
-Weather conditions during the monsoon season can change quickly across
-different parts of Pakistan.
+The internet provides access to a large amount of health information, but
+not every online claim is accurate.
 </p>
 
 <p>
-Residents should follow official weather alerts, especially when heavy rain,
-flooding or strong winds are expected in their area.
+Readers should prefer information from recognised health organisations,
+qualified professionals and established medical resources.
 </p>
+
+<p>
+People should avoid making important treatment decisions based solely on
+unverified social media posts or automated content.
+</p>
+
+<div class="source-note">
+General health information only.
+</div>
+
 </article>
 
 
 <!-- 19 -->
 <article class="news-card">
-<span class="category">Entertainment</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Entertainment Industry Continues Its Digital Shift</h3>
+<span class="category">Sports</span>
+<span class="date">August 2026</span>
+
+<h3>Cricket Remains a Major Part of Pakistan's Sporting Culture</h3>
 
 <p>
-Streaming platforms and social media continue to change how audiences watch
-films, dramas, music and other entertainment content.
+Cricket continues to attract large audiences in Pakistan and remains one of
+the country's most followed sports.
 </p>
 
 <p>
-Digital platforms are also giving creators new ways to publish content and
-reach audiences around the world.
+Domestic competitions provide opportunities for emerging players while
+international matches create wider attention.
 </p>
+
+<p>
+Fans should check official team and tournament channels for confirmed
+fixtures, squads and results.
+</p>
+
+<div class="source-note">
+General sports information. Match details should be confirmed through
+official sources.
+</div>
+
 </article>
 
 
 <!-- 20 -->
 <article class="news-card">
-<span class="category">Technology / Internet</span>
-<span class="date">18 Aug 2026</span>
 
-<h3>Internet Services Continue to Expand Digital Opportunities</h3>
+<span class="category">Sports</span>
+<span class="date">August 2026</span>
+
+<h3>Sports Technology Is Changing How Matches Are Analysed</h3>
 
 <p>
-Faster internet access is creating new opportunities in online education,
-remote work, freelancing, e-commerce and digital business.
+Modern sports teams use digital tools to analyse player performance,
+training data and match situations.
 </p>
 
 <p>
-Reliable connectivity and digital skills are becoming increasingly important
-for students, workers and small businesses.
+Video analysis and performance statistics can help coaches identify areas
+where players may improve.
 </p>
+
+<p>
+Technology can support sporting decisions, while coaches and athletes still
+provide the human judgement needed to understand performance.
+</p>
+
+<div class="source-note">
+General sports technology information.
+</div>
+
+</article>
+
+
+<!-- 21 -->
+<article class="news-card">
+
+<span class="category">Weather</span>
+<span class="date">August 2026</span>
+
+<h3>Weather Information Is Important During Heavy Rain Periods</h3>
+
+<p>
+Weather conditions can change quickly, particularly during periods of heavy
+rain and thunderstorms.
+</p>
+
+<p>
+People travelling or working outdoors should pay attention to official
+weather warnings and local safety instructions.
+</p>
+
+<p>
+Residents in areas vulnerable to flooding should remain alert to changing
+conditions and follow local authorities.
+</p>
+
+<div class="source-note">
+For live weather information, consult official meteorological authorities.
+</div>
+
+</article>
+
+
+<!-- 22 -->
+<article class="news-card">
+
+<span class="category">Environment</span>
+<span class="date">August 2026</span>
+
+<h3>Environmental Awareness Is Becoming More Important</h3>
+
+<p>
+Waste management, clean water, energy use and air quality are important environmental issues for communities.
+</p>
+
+<p>
+Simple actions such as reducing unnecessary waste, saving water and using
+resources carefully can support cleaner surroundings.
+</p>
+
+<p>
+Long-term environmental improvements usually require cooperation between
+individuals, communities, businesses and public institutions.
+</p>
+
+<div class="source-note">
+General environmental information.
+</div>
+
+</article>
+
+
+<!-- 23 -->
+<article class="news-card">
+
+<span class="category">Internet</span>
+<span class="date">August 2026</span>
+
+<h3>Reliable Internet Access Supports Education and Remote Work</h3>
+
+<p>
+Internet connectivity is increasingly important for students, freelancers,
+remote workers and small businesses.
+</p>
+
+<p>
+A stable connection can make online meetings, educational classes,
+file transfers and cloud services easier to use.
+</p>
+
+<p>
+Users should compare speed, reliability, coverage and customer support when
+selecting an internet service.
+</p>
+
+<div class="source-note">
+General internet service information.
+</div>
+
+</article>
+
+
+<!-- 24 -->
+<article class="news-card">
+
+<span class="category">Freelancing</span>
+<span class="date">August 2026</span>
+
+<h3>Freelancing Creates New Digital Work Opportunities</h3>
+
+<p>
+Freelancing allows people to provide services to clients without working in
+a traditional office environment.
+</p>
+
+<p>
+Writing, design, programming, video editing, virtual assistance and digital
+marketing are examples of services that can be offered online.
+</p>
+
+<p>
+Successful freelancers generally need useful skills, clear communication,
+reliable delivery and patience while building their professional reputation.
+</p>
+
+<div class="source-note">
+General career and freelancing information.
+</div>
+
+</article>
+
+
+<!-- 25 -->
+<article class="news-card">
+
+<span class="category">Digital Marketing</span>
+<span class="date">August 2026</span>
+
+<h3>Businesses Continue to Use Digital Marketing</h3>
+
+<p>
+Digital marketing gives businesses several ways to communicate with
+potential customers.
+</p>
+
+<p>
+Search engines, websites, social media, email and online advertising can
+all play different roles in a marketing strategy.
+</p>
+
+<p>
+Businesses should measure results and improve their strategy according to
+customer response rather than relying on one method alone.
+</p>
+
+<div class="source-note">
+General digital marketing information.
+</div>
+
+</article>
+
+
+<!-- 26 -->
+<article class="news-card">
+
+<span class="category">Blogging</span>
+<span class="date">August 2026</span>
+
+<h3>Original Blog Content Can Provide More Value to Readers</h3>
+
+<p>
+A useful website should provide information that answers real questions and
+offers value beyond simply repeating material found elsewhere.
+</p>
+
+<p>
+Clear headings, readable paragraphs and accurate information can make
+articles easier for visitors to understand.
+</p>
+
+<p>
+Website owners should focus on helping readers instead of producing pages
+only for search engines.
+</p>
+
+<div class="source-note">
+General website content guidance.
+</div>
+
+</article>
+
+
+<!-- 27 -->
+<article class="news-card">
+
+<span class="category">SEO</span>
+<span class="date">August 2026</span>
+
+<h3>Clear Website Structure Helps Visitors Find Information</h3>
+
+<p>
+Search engine optimisation involves making a website easier for both users
+and search engines to understand.
+</p>
+
+<p>
+Descriptive titles, useful headings, internal links and relevant content can
+help organise a website.
+</p>
+
+<p>
+SEO should not depend on keyword stuffing or repetitive pages that provide
+little value to visitors.
+</p>
+
+<div class="source-note">
+General search optimisation information.
+</div>
+
+</article>
+
+
+<!-- 28 -->
+<article class="news-card">
+
+<span class="category">Apps</span>
+<span class="date">August 2026</span>
+
+<h3>Mobile Applications Continue to Support Everyday Activities</h3>
+
+<p>
+Mobile applications now support many everyday activities, including
+communication, learning, shopping, entertainment and productivity.
+</p>
+
+<p>
+Users should install applications from trusted sources and check requested
+permissions before granting access.
+</p>
+
+<p>
+Keeping applications updated can also help users receive security fixes and
+new functionality.
+</p>
+
+<div class="source-note">
+General mobile application information.
+</div>
+
+</article>
+
+
+<!-- 29 -->
+<article class="news-card">
+
+<span class="category">Gadgets</span>
+<span class="date">August 2026</span>
+
+<h3>Smart Gadgets Are Becoming Part of Connected Homes</h3>
+
+<p>
+Connected gadgets can allow users to control or monitor different household
+functions through mobile applications.
+</p>
+
+<p>
+Examples include smart lighting, security devices, speakers and appliances.
+</p>
+
+<p>
+Before buying a connected device, users should consider compatibility,
+security, privacy and long-term software support.
+</p>
+
+<div class="source-note">
+General smart-home technology information.
+</div>
+
+</article>
+
+
+<!-- 30 -->
+<article class="news-card">
+
+<span class="category">Finance</span>
+<span class="date">August 2026</span>
+
+<h3>Digital Payments Are Becoming More Common</h3>
+
+<p>
+Digital payment systems can make everyday transactions faster and more
+convenient.
+</p>
+
+<p>
+Consumers should protect payment accounts with strong authentication and
+avoid sharing one-time verification codes.
+</p>
+
+<p>
+Businesses accepting digital payments should also pay attention to account
+security and transaction records.
+</p>
+
+<div class="source-note">
+General financial technology information.
+</div>
+
+</article>
+
+
+<!-- 31 -->
+<article class="news-card">
+
+<span class="category">Finance</span>
+<span class="date">August 2026</span>
+
+<h3>Consumers Should Compare Financial Services Carefully</h3>
+
+<p>
+Financial products and services can have different fees, terms and
+requirements.
+</p>
+
+<p>
+Consumers should read official terms carefully before opening an account,
+using a financial service or making a long-term commitment.
+</p>
+
+<p>
+Important financial decisions should be based on reliable information and
+individual circumstances.
+</p>
+
+<div class="source-note">
+General financial information, not financial advice.
+</div>
+
+</article>
+
+
+<!-- 32 -->
+<article class="news-card">
+
+<span class="category">International</span>
+<span class="date">August 2026</span>
+
+<h3>Global Technology Developments Can Affect Local Markets</h3>
+
+<p>
+Technology products are connected through international manufacturing and
+supply chains.
+</p>
+
+<p>
+Changes in component availability, manufacturing costs and global demand can
+influence products eventually sold in local markets.
+</p>
+
+<p>
+This is one reason why prices and availability of electronic products can
+change over time.
+</p>
+
+<div class="source-note">
+General international technology information.
+</div>
+
+</article>
+
+
+<!-- 33 -->
+<article class="news-card">
+
+<span class="category">Science</span>
+<span class="date">August 2026</span>
+
+<h3>Robotics Research Continues to Expand</h3>
+
+<p>
+Robotics combines software, electronics, sensors and mechanical systems to
+perform tasks in controlled environments.
+</p>
+
+<p>
+Robots are used in manufacturing, research, logistics and other specialised
+fields.
+</p>
+
+<p>
+Future developments may make robotic systems more capable, but practical
+deployment still depends on cost, safety and reliability.
+</p>
+
+<div class="source-note">
+General science and robotics information.
+</div>
+
+</article>
+
+
+<!-- 34 -->
+<article class="news-card">
+
+<span class="category">Space</span>
+<span class="date">August 2026</span>
+
+<h3>Space Technology Supports Scientific Research</h3>
+
+<p>
+Space missions provide opportunities to study planets, stars, Earth's
+environment and conditions beyond our atmosphere.
+</p>
+
+<p>
+Satellites also support communication, navigation, weather monitoring and
+other services used on Earth.
+</p>
+
+<p>
+Space research often involves cooperation between scientists, engineers and
+organisations from different regions.
+</p>
+
+<div class="source-note">
+General space and science information.
+</div>
+
+</article>
+
+
+<!-- 35 -->
+<article class="news-card">
+
+<span class="category">Technology</span>
+<span class="date">August 2026</span>
+
+<h3>Cloud Services Help Businesses Manage Digital Information</h3>
+
+<p>
+Cloud computing allows organisations to use remote computing resources
+instead of depending entirely on local hardware.
+</p>
+
+<p>
+Businesses can use cloud platforms for storage, software, backups,
+collaboration and data processing.
+</p>
+
+<p>
+Security settings, access controls and backup strategies remain important
+when using cloud services.
+</p>
+
+<div class="source-note">
+General cloud computing information.
+</div>
+
+</article>
+
+
+<!-- 36 -->
+<article class="news-card">
+
+<span class="category">Web Development</span>
+<span class="date">August 2026</span>
+
+<h3>Professional Websites Can Help Small Businesses Reach Customers</h3>
+
+<p>
+A professional website can give a small business a central place to explain
+its products, services and contact information.
+</p>
+
+<p>
+A clear layout and mobile-friendly design can make it easier for visitors
+to find important information.
+</p>
+
+<p>
+Website owners should also keep business details, policies and contact
+information accurate.
+</p>
+
+<div class="source-note">
+General website development information.
+</div>
+
+</article>
+
+
+<!-- 37 -->
+<article class="news-card">
+
+<span class="category">Education Technology</span>
+<span class="date">August 2026</span>
+
+<h3>Educational Technology Can Support Classroom Learning</h3>
+
+<p>
+Digital tools can help teachers present information through videos,
+interactive exercises and online resources.
+</p>
+
+<p>
+Technology works best when it supports a clear educational objective rather
+than being used simply because it is available.
+</p>
+
+<p>
+Teachers and students should also consider privacy and responsible use when
+using online educational platforms.
+</p>
+
+<div class="source-note">
+General education technology information.
+</div>
+
+</article>
+
+
+<!-- 38 -->
+<article class="news-card">
+
+<span class="category">Career</span>
+<span class="date">August 2026</span>
+
+<h3>Professional Skills Need Regular Improvement</h3>
+
+<p>
+Technology and workplace requirements can change over time, making
+continuous learning useful for many professionals.
+</p>
+
+<p>
+Workers can improve their skills through practical projects, courses,
+reading and supervised experience.
+</p>
+
+<p>
+Building a portfolio of real work can also help demonstrate practical
+ability to potential clients or employers.
+</p>
+
+<div class="source-note">
+General career development information.
+</div>
+
+</article>
+
+
+<!-- 39 -->
+<article class="news-card">
+
+<span class="category">Entertainment</span>
+<span class="date">August 2026</span>
+
+<h3>Streaming Services Continue to Change Entertainment Habits</h3>
+
+<p>
+Online streaming has changed how many people watch films, dramas,
+documentaries and other video content.
+</p>
+
+<p>
+Viewers can often select content according to their own schedule rather
+than following a fixed broadcast timetable.
+</p>
+
+<p>
+Users should check subscription prices, cancellation terms and supported
+devices before choosing a service.
+</p>
+
+<div class="source-note">
+General entertainment technology information.
+</div>
+
+</article>
+
+
+<!-- 40 -->
+<article class="news-card">
+
+<span class="category">Media</span>
+<span class="date">August 2026</span>
+
+<h3>Readers Should Compare Information From Multiple Sources</h3>
+
+<p>
+Online information can spread quickly, but speed does not always mean that
+information has been verified.
+</p>
+
+<p>
+Comparing reports, checking dates and looking for original statements can
+help readers understand important stories more accurately.
+</p>
+
+<p>
+This is particularly useful for political, financial, health and emergency
+information.
+</p>
+
+<div class="source-note">
+General media literacy guidance.
+</div>
+
+</article>
+
+
+<!-- 41 -->
+<article class="news-card">
+
+<span class="category">Pakistan</span>
+<span class="date">August 2026</span>
+
+<h3>Public Awareness Helps Communities During Emergencies</h3>
+
+<p>
+Community awareness can be valuable during situations involving severe
+weather, road closures, public safety concerns or other emergencies.
+</p>
+
+<p>
+People should rely on official alerts and instructions from relevant
+authorities when an emergency occurs.
+</p>
+
+<p>
+Sharing unverified information during an emergency can create unnecessary
+confusion.
+</p>
+
+<div class="source-note">
+General public safety information.
+</div>
+
+</article>
+
+
+<!-- 42 -->
+<article class="news-card">
+
+<span class="category">Transport</span>
+<span class="date">August 2026</span>
+
+<h3>Urban Transport Remains Important for Growing Cities</h3>
+
+<p>
+Reliable public transportation can help people travel to schools,
+workplaces, markets and other destinations.
+</p>
+
+<p>
+Efficient transport systems can reduce pressure on roads and provide
+additional mobility options for people without private vehicles.
+</p>
+
+<p>
+Technology can support transport through digital ticketing, route
+information and real-time service updates.
+</p>
+
+<div class="source-note">
+General transportation information.
+</div>
+
+</article>
+
+
+<!-- 43 -->
+<article class="news-card">
+
+<span class="category">Environment</span>
+<span class="date">August 2026</span>
+
+<h3>Energy Efficiency Can Reduce Unnecessary Consumption</h3>
+
+<p>
+Energy-efficient appliances and responsible daily habits can help reduce
+unnecessary electricity consumption.
+</p>
+
+<p>
+Turning off unused equipment, maintaining appliances and selecting efficient
+products are simple steps households can consider.
+</p>
+
+<p>
+Energy decisions should also consider cost, expected usage and quality.
+</p>
+
+<div class="source-note">
+General energy awareness information.
+</div>
+
+</article>
+
+
+<!-- 44 -->
+<article class="news-card">
+
+<span class="category">Food</span>
+<span class="date">August 2026</span>
+
+<h3>Food Safety Remains Important for Every Household</h3>
+
+<p>
+Safe food handling is an important part of maintaining household hygiene.
+</p>
+
+<p>
+Keeping food at appropriate temperatures, washing hands and preventing
+cross-contamination can reduce common food safety risks.
+</p>
+
+<p>
+Food storage instructions can vary by product, so consumers should follow
+information provided by manufacturers and recognised food safety authorities.
+</p>
+
+<div class="source-note">
+General food safety information.
+</div>
+
+</article>
+
+
+<!-- 45 -->
+<article class="news-card">
+
+<span class="category">Travel</span>
+<span class="date">August 2026</span>
+
+<h3>Travellers Can Benefit From Better Trip Planning</h3>
+
+<p>
+Travel planning can help people manage transportation, accommodation,
+documents and expected expenses.
+</p>
+
+<p>
+Before travelling internationally, visitors should check passport, visa,
+entry and health requirements from official sources.
+</p>
+
+<p>
+Local weather and transportation conditions should also be considered when
+planning a trip.
+</p>
+
+<div class="source-note">
+General travel planning information.
+</div>
+
+</article>
+
+
+<!-- 46 -->
+<article class="news-card">
+
+<span class="category">Tourism</span>
+<span class="date">August 2026</span>
+
+<h3>Local Tourism Can Support Small Communities</h3>
+
+<p>
+Domestic tourism can provide opportunities for local hotels, restaurants,
+guides, transport providers and small shops.
+</p>
+
+<p>
+Visitors can support local communities by respecting cultural sites,
+following local rules and keeping natural areas clean.
+</p>
+
+<p>
+Good travel experiences depend on responsible behaviour from both visitors
+and local service providers.
+</p>
+
+<div class="source-note">
+General tourism information.
+</div>
+
+</article>
+
+
+<!-- 47 -->
+<article class="news-card">
+
+<span class="category">Mobile Security</span>
+<span class="date">August 2026</span>
+
+<h3>Phone Users Should Review Application Permissions</h3>
+
+<p>
+Mobile applications may request access to cameras, microphones, contacts,
+storage or location services.
+</p>
+
+<p>
+Users should consider whether requested permissions are necessary for the
+application's intended function.
+</p>
+
+<p>
+Removing unnecessary permissions can help users maintain greater control
+over personal information.
+</p>
+
+<div class="source-note">
+General mobile privacy information.
+</div>
+
+</article>
+
+
+<!-- 48 -->
+<article class="news-card">
+
+<span class="category">Privacy</span>
+<span class="date">August 2026</span>
+
+<h3>Privacy Awareness Is Important in Everyday Digital Life</h3>
+
+<p>
+People share information through websites, applications and social networks
+every day.
+</p>
+
+<p>
+Understanding privacy settings and reading important service policies can
+help users make more informed choices.
+</p>
+
+<p>
+Users should avoid sharing sensitive information publicly unless there is a
+clear and trusted reason to do so.
+</p>
+
+<div class="source-note">
+General privacy awareness information.
+</div>
+
+</article>
+
+
+<!-- 49 -->
+<article class="news-card">
+
+<span class="category">Technology</span>
+<span class="date">August 2026</span>
+
+<h3>Faster Processors Support More Advanced Digital Applications</h3>
+
+<p>
+Modern processors are designed to handle increasingly demanding software
+and workloads.
+</p>
+
+<p>
+Processing performance can influence activities such as gaming, video
+editing, artificial intelligence and multitasking.
+</p>
+
+<p>
+Overall device performance also depends on memory, storage, software
+optimisation and cooling.
+</p>
+
+<div class="source-note">
+General computer hardware information.
+</div>
+
+</article>
+
+
+<!-- 50 -->
+<article class="news-card">
+
+<span class="category">Gadgets</span>
+<span class="date">August 2026</span>
+
+<h3>Battery Life Remains a Key Factor for Mobile Users</h3>
+
+<p>
+Battery capacity is one factor that affects how long a device can operate
+between charges.
+</p>
+
+<p>
+Screen brightness, applications, network activity and processor workload
+can also influence battery consumption.
+</p>
+
+<p>
+Users can often extend daily battery life by reviewing background activity
+and unnecessary power-consuming settings.
+</p>
+
+<div class="source-note">
+General battery and smartphone information.
+</div>
+
+</article>
+
+
+<!-- 51 -->
+<article class="news-card">
+
+<span class="category">Business Technology</span>
+<span class="date">August 2026</span>
+
+<h3>Businesses Use Data to Understand Customer Needs</h3>
+
+<p>
+Businesses can collect useful information about customer preferences
+through lawful and transparent methods.
+</p>
+
+<p>
+Analysing sales patterns can help companies improve inventory, marketing
+and customer service.
+</p>
+
+<p>
+Organisations should handle customer information responsibly and follow
+applicable privacy requirements.
+</p>
+
+<div class="source-note">
+General business technology information.
+</div>
+
+</article>
+
+
+<!-- 52 -->
+<article class="news-card">
+
+<span class="category">E-Commerce</span>
+<span class="date">August 2026</span>
+
+<h3>Clear Product Information Helps Online Buyers</h3>
+
+<p>
+Online shoppers depend on product descriptions to understand what they are
+considering before placing an order.
+</p>
+
+<p>
+Important information can include specifications, dimensions, warranty,
+delivery details and return conditions.
+</p>
+
+<p>
+Clear information can reduce misunderstandings between sellers and buyers.
+</p>
+
+<div class="source-note">
+General e-commerce information.
+</div>
+
+</article>
+
+
+<!-- 53 -->
+<article class="news-card">
+
+<span class="category">Technology</span>
+<span class="date">August 2026</span>
+
+<h3>Digital Storage Makes Personal Files Easier to Organise</h3>
+
+<p>
+People now store photographs, documents and other files on smartphones,
+computers and online services.
+</p>
+
+<p>
+Organising files into clear folders and maintaining backups can make it
+easier to recover important information.
+</p>
+
+<p>
+Users should also protect accounts used for cloud storage with strong
+authentication.
+</p>
+
+<div class="source-note">
+General digital storage information.
+</div>
+
+</article>
+
+
+<!-- 54 -->
+<article class="news-card">
+
+<span class="category">AI Education</span>
+<span class="date">August 2026</span>
+
+<h3>Students Need to Use AI Tools Responsibly</h3>
+
+<p>
+AI can help students understand difficult topics, organise ideas and
+practise certain skills.
+</p>
+
+<p>
+Students should still learn the underlying concepts instead of relying
+entirely on generated answers.
+</p>
+
+<p>
+Schools and educational institutions may have their own rules regarding
+AI-assisted assignments, so students should follow those rules.
+</p>
+
+<div class="source-note">
+General educational technology information.
+</div>
+
+</article>
+
+
+<!-- 55 -->
+<article class="news-card">
+
+<span class="category">Programming</span>
+<span class="date">August 2026</span>
+
+<h3>Programming Skills Remain Useful Across Technology Fields</h3>
+
+<p>
+Programming is used to create websites, applications, automation tools and
+many other digital systems.
+</p>
+
+<p>
+Beginners can start with basic concepts such as variables, conditions,
+functions and data structures.
+</p>
+
+<p>
+Regular practice and building small projects can help learners develop
+practical programming skills.
+</p>
+
+<div class="source-note">
+General programming education information.
+</div>
+
+</article>
+
+
+<!-- 56 -->
+<article class="news-card">
+
+<span class="category">Web Development</span>
+<span class="date">August 2026</span>
+
+<h3>Mobile-Friendly Websites Provide a Better User Experience</h3>
+
+<p>
+A large number of visitors access websites through smartphones, making
+responsive design important for modern websites.
+</p>
+
+<p>
+Readable text, suitable buttons and layouts that adapt to smaller screens
+can make pages easier to use.
+</p>
+
+<p>
+Website owners should test their pages on different screen sizes before
+publishing major changes.
+</p>
+
+<div class="source-note">
+General web development information.
+</div>
+
+</article>
+
+
+<!-- 57 -->
+<article class="news-card">
+
+<span class="category">Search</span>
+<span class="date">August 2026</span>
+
+<h3>Clear Website Navigation Helps Visitors Find Information</h3>
+
+<p>
+A website can contain useful information but still be difficult to use if
+visitors cannot find important pages.
+</p>
+
+<p>
+Simple navigation menus and descriptive links can help users move between
+related sections.
+</p>
+
+<p>
+Internal linking can also connect useful articles and provide readers with
+additional information.
+</p>
+
+<div class="source-note">
+General website usability information.
+</div>
+
+</article>
+
+
+<!-- 58 -->
+<article class="news-card">
+
+<span class="category">News Literacy</span>
+<span class="date">August 2026</span>
+
+<h3>Checking Dates Can Help Readers Understand News Correctly</h3>
+
+<p>
+Old news stories can sometimes appear again on social media without clear
+context.
+</p>
+
+<p>
+Checking the publication date and comparing the information with recent
+official statements can help prevent misunderstandings.
+</p>
+
+<p>
+Readers should be particularly careful when old information is presented as
+a current event.
+</p>
+
+<div class="source-note">
+General media literacy guidance.
+</div>
+
+</article>
+
+
+<!-- 59 -->
+<article class="news-card">
+
+<span class="category">Pakistan Technology</span>
+<span class="date">August 2026</span>
+
+<h3>Digital Literacy Can Help People Use Online Services Safely</h3>
+
+<p>
+Digital literacy includes understanding basic internet use, privacy,
+password security and reliable information.
+</p>
+
+<p>
+People who understand common online risks may be better prepared to identify
+suspicious websites and messages.
+</p>
+
+<p>
+Learning these skills can be useful for students, workers, families and
+small businesses.
+</p>
+
+<div class="source-note">
+General digital literacy information.
+</div>
+
+</article>
+
+
+<!-- 60 -->
+<article class="news-card">
+
+<span class="category">Future Technology</span>
+<span class="date">August 2026</span>
+
+<h3>Technology Will Continue to Influence Everyday Life</h3>
+
+<p>
+Technology is becoming part of communication, education, transportation,
+health, entertainment and business.
+</p>
+
+<p>
+Future developments may combine hardware, software, connectivity and
+artificial intelligence in new ways.
+</p>
+
+<p>
+Users can benefit from these developments by learning new skills while
+remaining aware of privacy, security and responsible technology use.
+</p>
+
+<div class="source-note">
+General technology outlook for informational purposes.
+</div>
+
 </article>
 
 </div>
+
 </div>
 
 <footer>
+
 <p>© 2026 InfoHub - All Rights Reserved</p>
-<p>Pakistan & World News | Technology | Education | Sports | Business</p>
+
+<p>
+Pakistan & World Updates |
+Technology |
+Smartphones |
+AI |
+Education |
+Business |
+Cars |
+Sports |
+Health
+</p>
+
 </footer>
 
 </body>
